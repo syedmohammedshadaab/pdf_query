@@ -47,8 +47,7 @@ def main():
             
             llm = OpenAI(
                   temperature=0.6,
-                  model_name="gpt-3.5-turbo-instruct",
-                  endpoint="v1/completions"  # Specify the correct endpoint
+                  model_name="gpt-3.5-turbo-1106"
                 )
 
             chain= load_qa_chain(llm,chain_type="stuff")
