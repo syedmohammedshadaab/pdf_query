@@ -47,7 +47,7 @@ def main():
             
             llm=OpenAI(
                 temperature = 0.6,
-                model_name=gpt-3.5-turbo-instruct
+                model_name="gpt-3.5-turbo-instruct"
             )
             chain= load_qa_chain(llm,chain_type="stuff")
             response = chain.run(input_documents=docs,question=user_question)
