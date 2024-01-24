@@ -43,7 +43,7 @@ def main():
         user_question = st.text_input('Ask a question about your PDF:')
         if user_question:
             docs = knowledge_base.similarity_search(user_question)
-            st.write(docs)
+            # st.write(docs)
             
             llm = OpenAI(
                   temperature=0.6,
